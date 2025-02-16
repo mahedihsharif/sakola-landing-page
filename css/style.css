@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #000d83;
+  --secondary-color: #0bb4ff;
+  --primary-font-color: #040931b5;
+  --body-background-color: #e5e5e5;
+  --background-color: #e7efff;
+  --sub_heading_font-size: 1.125rem;
+  --heading-font-size: 2.5rem;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* header section styling */
+header {
+  background-color: var(--background-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
+header > * {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 30px;
+}
+header nav ul li a {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+  transition: all 0.5s ease;
+}
+header .menu_button a {
+  color: var(--primary-color);
+}
+
+header .menu_button .signin {
+  margin-right: 20px;
+}
+
+header .menu_button .signup {
+  border: 1px solid var(--primary-color);
+  padding: 5px 12px;
+  border-radius: 8px;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+header .menu_button .signup:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* hero section styling */
+.hero_section {
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+
+.hero_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.sub_heading {
+  font-size: var(--sub_heading_font-size);
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.heading {
+  font-size: var(--heading-font-size);
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 72px;
+  letter-spacing: 0.5px;
+}
+
+.hero-text h1.heading,
+.school-section h2.heading,
+.about-info h2.heading {
+  width: 60%;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: var(--primary-font-color);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.hero_text p {
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+.btn_group {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 24px 0;
+}
+
+.btn {
+  padding: 16px 38px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 12px;
+  transform: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover,
+.outline_btn:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.outline_btn {
+  padding: 16px 38px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 12px;
+}
+
+/* avatar group */
+.avatar_stats {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.avatar_group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  position: relative;
+  margin-left: -15px;
+}
+
+.avatar_img img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.placeholder .avatar_counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.avatar_stats span.student_count {
+  line-height: 48px;
+}
+
+/* about us styling */
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 15px;
+}
+
+.about_image,
+.about_info {
+  width: 50%;
+}
+
+/* about section */
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 15px;
+}
+
+.about_image,
+.about_info {
+  width: 50%;
+}
+
+/* why us box */
+.why_us {
+  margin-top: 40px;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.why_us_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 80%;
+}
+
+.icon_text {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edfaff;
+  border-radius: 50%;
+}
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #333;
+  line-height: 40px;
+}
+
+.arrow_icon {
+  margin-left: auto;
+}
+
+.arrow_icon img {
+  width: 16px;
+  height: 16px;
+}
+
+/* school section */
+.school_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 15px;
+}
+
+.school_section .text_content {
+  width: 50%;
+}
+
+/* studying section */
+
+.classes_section {
+  text-align: center;
+  padding: 15px;
+}
+.classes_section h2.heading {
+  width: 45%;
+  margin: 0 auto;
+}
+/* Class cards container styling */
+
+.class_cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.class_card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.class_card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling */
+.course_image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Title, count, and rating styling */
+.course_title {
+  font-size: 1.2rem;
+  color: #040931;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.student_count {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.star_rating {
+  color: #f8b400;
+  font-size: 12px;
+}
+
+/* newsletter section */
+.newsletter {
+  position: relative;
+  height: 300px;
+  background-image: url("../images/news-letter.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.newsletter .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000d83d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.newsletter .content {
+  text-align: center;
+  color: white;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  margin-bottom: 30px;
+  color: white;
+}
+.newsletter .btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 15px;
+}
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  padding: 50px 20px;
+  gap: 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h4 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer .logo {
+  margin-bottom: 15px;
+}
+
+.footer .logo img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer .social-media a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+  margin-right: 15px;
+  background-color: var(--secondary-color);
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.footer .social-media a:hover {
+  background-color: var(--primary-color);
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+
+.footer ul li a:hover {
+  color: #007bff;
+}
