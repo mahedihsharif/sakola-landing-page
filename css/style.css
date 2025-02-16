@@ -115,9 +115,9 @@ header .menu_button .signup:hover {
   letter-spacing: 0.5px;
 }
 
-.hero-text h1.heading,
-.school-section h2.heading,
-.about-info h2.heading {
+.hero_text h1.heading,
+.school_section h2.heading,
+.about_info h2.heading {
   width: 60%;
   margin-bottom: 24px;
 }
